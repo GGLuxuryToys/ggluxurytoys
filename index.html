@@ -7,7 +7,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
-<link rel="shortcut icon" type="image/icon" href="img/favicon.png"/>
+<link rel="shortcut icon" type="image/icon" href="assets/img/favicon.png"/>
 <script src="https://kit.fontawesome.com/e5b185397b.js" crossorigin="anonymous"></script>
 
 <!-- Google Web Fonts -->
@@ -21,16 +21,16 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
-<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+<link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
 <!-- Customized Bootstrap Stylesheet -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/templatemo-topic-listing.css" rel="stylesheet">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/templatemo-topic-listing.css" rel="stylesheet">
 
 <!-- Template Stylesheet -->
-<link href="css/style.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
 
 <style>
     body {
@@ -165,18 +165,18 @@
 	    margin-top:14px;
     }
     .container {
-  overflow: hidden;
-  .slider {
-    animation: slidein 30s linear infinite;
-    white-space: nowrap;
-    .logos {
-      width: 100%;
-      display: inline-block;
-      margin: 0px 0;
-      .fab {
-        width: calc(100% / 5);
-        animation: fade-in 0.5s 
-          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        overflow: hidden;
+        .slider {
+            animation: slidein 30s linear infinite;
+            white-space: nowrap;
+        .logos {
+            width: 100%;
+            display: inline-block;
+            margin: 0px 0;
+        .fab {
+            width: calc(100% / 5);
+            animation: fade-in 0.5s 
+            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
     }
   }
@@ -258,46 +258,42 @@
 <!-- Navbar & Hero Start -->
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <img src="img/logo.png" alt="Logo">
+        <a href="#" class="navbar-brand p-0">
+            <img src="assets/img/logo.png" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link" style="color: #eb00d8 !important;"><b>Home</b></a>
+                <a href="#" class="nav-item nav-link" style="color: #eb00d8 !important;"><b>Home</b></a>
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>Shop</b></a>
                     <div class="dropdown-menu m-0">
-                        <a href="luxury.html" class="dropdown-item"><b>Luxury Toys</b></a>
-                        <a href="0km.html" class="dropdown-item"><b>0Km</b></a>
-                        <a href="autos.html" class="dropdown-item"><b>Autos</b></a>
-                        <a href="suv.html" class="dropdown-item"><b>SUV</b></a>
-                        <a href="mid.html" class="dropdown-item"><b>Mid Size</b></a>
-                        <a href="full.html" class="dropdown-item"><b>Full Size</b></a>
-                        <a href="nautica.html" class="dropdown-item"><b>Nautica</b></a>
-                        <a href="aeronautica.html" class="dropdown-item"><b>Aeronautica</b></a>
-                        <a href="utv.html" class="dropdown-item"><b>UTV</b></a>
-                        <a href="atv.html" class="dropdown-item"><b>ATV</b></a>
-                        <a href="mx.html" class="dropdown-item"><b>MX</b></a>
-                        <a href="motos.html" class="dropdown-item"><b>Motos</b></a>
-                        <a href="pista.html" class="dropdown-item"><b>Motos de Pista</b></a>
+                        <a href="secciones/luxury.html" class="dropdown-item"><b>Luxury Toys</b></a>
+                        <a href="secciones/autos.html" class="dropdown-item"><b>Autos</b></a>
+                        <a href="secciones/suv.html" class="dropdown-item"><b>SUV</b></a>
+                        <a href="secciones/mid.html" class="dropdown-item"><b>Mid Size</b></a>
+                        <a href="secciones/nautica.html" class="dropdown-item"><b>Nautica</b></a>
+                        <a href="secciones/utv.html" class="dropdown-item"><b>UTV</b></a>
+                        <a href="secciones/atv.html" class="dropdown-item"><b>ATV</b></a>
+                        <a href="secciones/mx.html" class="dropdown-item"><b>MX</b></a>
+                        <a href="secciones/motos.html" class="dropdown-item"><b>Motos</b></a>                        
                     </div>
                 </div>                
-                <a href="accesorios.html" class="nav-item nav-link"><b>Accesorios</b></a>
-                <a href="eventos.html" class="nav-item nav-link"><b>Eventos</b></a>
-                <a href="contacto.html" class="nav-item nav-link"><b>Contacto</b></a>
+                <a href="secciones/eventos.html" class="nav-item nav-link"><b>Eventos</b></a>
+                <a href="secciones/contacto.html" class="nav-item nav-link"><b>Contacto</b></a>
             </div>
         </div>
     </nav>
+  </div>
 
     <!-- Carousel Start -->
     <div class="carousel-header">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="img/heros/hero6.jpg" class="img-fluid" alt="Image">
+                    <img src="assets/img/heros/hero6.jpg" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                         </div>
@@ -360,43 +356,43 @@
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/mustangmach1.png" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/mustangmach1.png" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>FORD</b></h5>
                                           <h5 class="model"><b>MUSTANG MACH 1</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="mustangmach1.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/luxurytoys/machone.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center> 
                             </div>
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/mach1.png" alt="Card image cap">
+                                        <img class="card-img-top" src="secciones/img/mach1.png" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>FORD</b></h5>
                                           <h5 class="model"><b>MUSTANG MACH 1</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="mach1.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/luxurytoys/mach1.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center> 
                             </div>
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/boxter.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/boxter.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>PORSCHE</b></h5>
                                           <h5 class="model"><b>BOXSTER</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="boxter.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/luxurytoys/boxster.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center> 
                             </div>
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="luxury.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/luxury.html" class="float">VER TODO</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="autos-tab-pane" role="tabpanel" aria-labelledby="autos-tab" tabindex="0">
@@ -404,48 +400,48 @@
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/mk75.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/mk75.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>VOLKSWAGEN</b></h5>
                                           <h5 class="model"><b>GOLF MK7.5</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="mk75.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/autos/mk75.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center>  
                             </div>
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/s5.png" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/s5.png" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>AUDI</b></h5>
                                           <h5 class="model"><b>S5 V8</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="s5v8.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/autos/s5v8.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center>
                             </div>
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/328.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/328.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>BMW</b></h5>
                                           <h5 class="model"><b>328i SPORT</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="328sport.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/autos/328isport.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/e300.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/e300.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>MERCEDES BENZ</b></h5>
                                           <h5 class="model"><b>E300 V6</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="e300.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/autos/e300.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center> 
                             </div>
@@ -460,7 +456,7 @@
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/evoque.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/evoque.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>RANGE ROVER</b></h5>
                                           <h5 class="model"><b>EVOQUE</b></h5>
@@ -472,7 +468,7 @@
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/glc400.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/glc400.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>MERCEDES BENZ</b></h5>
                                           <h5 class="model"><b>GLE 400</b></h5>
@@ -484,7 +480,7 @@
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/gla200.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/gla200.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>MERCEDES BENZ</b></h5>
                                           <h5 class="model"><b>GLA 200</b></h5>
@@ -496,19 +492,19 @@
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/mbgla200.png" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/x635i.png" alt="Card image cap">
                                         <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>MERCEDES BENZ</b></h5>
-                                          <h5 class="model"><b>GLA 200</b></h5>
+                                          <h5 class="brand" style="color: #444a57;"><b>BMW</b></h5>
+                                          <h5 class="model"><b>X6 35i SPORT</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="mbgla200.html" class="float">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/suv/x6.html" class="float">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="suv.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/suv.html" class="float">VER TODO</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="mid-tab-pane" role="tabpanel" aria-labelledby="mid-tab" tabindex="0">
@@ -516,55 +512,55 @@
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/v62023.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/v62023.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>VOLKSWAGEN</b></h5>
                                           <h5 class="model"><b>AMAROK V6 EXTREME</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="v62023.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/mid/v6extreme.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/hiluxv6.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/hiluxv6.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>TOYOTA</b></h5>
                                           <h5 class="model"><b>HILUX GRS V6</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="hiluxgrs.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/mid/hiluxgrs.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/sw4.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/sw4.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>TOYOTA</b></h5>
                                           <h5 class="model"><b>HILUX SW4</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="sw4.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/mid/sw4.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/v6.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/v6.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>VOLKSWAGEN</b></h5>
                                           <h5 class="model"><b>AMAROK V6</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="v6.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/mid/amarokv6.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="mid.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/mid.html" class="float">VER TODO</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="utv-tab-pane" role="tabpanel" aria-labelledby="utv-tab" tabindex="0">
@@ -572,99 +568,87 @@
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/x3xrs.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/x3xrs.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>CAN AM</b></h5>
                                           <h5 class="model"><b>MAVERICK X3 XRS 1000</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="x3xrs.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/utv/maverick.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/rzr1000xp.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/rzr1000xp.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>POLARIS</b></h5>
                                           <h5 class="model"><b>RZR 1000 XP</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="rzr1000xp.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/utv/rzr1000xp.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/rzr1000turbo.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/rzr1000turbo.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>POLARIS</b></h5>
                                           <h5 class="model"><b>RZR 1000 TURBO</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="rzr1000turbo.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/utv/rzr1000turbo.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/commander1000r.png" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/commander1000r.png" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>CAN AM</b></h5>
                                           <h5 class="model"><b>COMMANDER 1000R</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="commander1000r.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/utv/commander.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="utv.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/utv.html" class="float">VER TODO</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="atv-tab-pane" role="tabpanel" aria-labelledby="atv-tab" tabindex="0">
-                        <div class="row">
+                        <div class="row">                            
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/yzf450.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>YAMAHA</b></h5>
-                                          <h5 class="model"><b>YZF 450cc</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="yzf450.html" class="float" target="_blank">VER UNIDAD</a>
-                                    </div>
-                                </center>   
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/yzf350.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/yzf350.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>YAMAHA</b></h5>
                                           <h5 class="model"><b>YZF 350cc</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="yzf350.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/atv/yzf350.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/yzf450raptor.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/yzf450raptor.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>YAMAHA</b></h5>
                                           <h5 class="model"><b>YZF 450cc</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="yzf450raptor.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/atv/yzf450.htmll" class="float" target="_blank">VER UNIDAD</a>
                                     </div>
                                 </center>   
                             </div>
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="atv.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/atv.html" class="float">VER TODO</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="mx-tab-pane" role="tabpanel" aria-labelledby="mx-tab" tabindex="0">
@@ -672,99 +656,51 @@
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/rmz450.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/rmz450.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>SUZUKI</b></h5>
                                           <h5 class="model"><b>RMZ 450cc</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="rmz450.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/mx/rmz450.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/yz450.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>YAMAHA</b></h5>
-                                          <h5 class="model"><b>YZ 450cc</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="yz450.html" class="float" target="_blank">VER UNIDAD</a>
-                                      </div>
-                                </center>   
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/yz450cc.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>YAMAHA</b></h5>
-                                          <h5 class="model"><b>YZ 250cc</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="yz250cc.html" class="float" target="_blank">VER UNIDAD</a>
-                                      </div>
-                                </center>   
-                            </div>
+                            </div>                   
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="mx.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/mx.html" class="float">VER TODO</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="motos-tab-pane" role="tabpanel" aria-labelledby="motos-tab" tabindex="0">
-                        <div class="row">
+                        <div class="row">                        
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/ks1200.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>BMW</b></h5>
-                                          <h5 class="model"><b>KS 1200cc</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="ks1200.html" class="float" target="_blank">VER UNIDAD</a>
-                                      </div>
-                                </center>   
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/rmz450.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>SUZUKI</b></h5>
-                                          <h5 class="model"><b>RMZ 450cc</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="rmz450.html" class="float" target="_blank">VER UNIDAD</a>
-                                      </div>
-                                </center>   
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/pcx2019.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/pcx2019.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>HONDA</b></h5>
                                           <h5 class="model"><b>PCX 150cc</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="pcx2019.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/motos/pcx2019.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                                 <center>
                                     <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="img/pcx2017.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="assets/img/pcx2017.jpg" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="brand" style="color: #444a57;"><b>HONDA</b></h5>
                                           <h5 class="model"><b>PCX 150cc</b></h5>
                                         </div>
-                                        <a class="btn btn-asesor" href="pcx2017.html" class="float" target="_blank">VER UNIDAD</a>
+                                        <a class="btn btn-asesor" href="unidades/motos/pcx.html" class="float" target="_blank">VER UNIDAD</a>
                                       </div>
                                 </center>   
                             </div>
                         </div>
                         <br><br>
                         <div class="col-12">
-                            <a class="btn btn-asesor" href="mx.html" class="float">VER TODO</a>
+                            <a class="btn btn-asesor" href="secciones/motos.html" class="float">VER TODO</a>
                         </div>
                     </div>
                 </div>  
@@ -781,7 +717,7 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-lg-5 col-12">
-                <img src="img/faq_graphic.jpg" class="img-fluid" alt="FAQs">
+                <img src="assets/img/faq_graphic.jpg" class="img-fluid" alt="FAQs">
             </div>
             <div class="col-lg-6 col-12 m-auto">
                 <div class="accordion" id="accordionExample">
@@ -837,12 +773,12 @@
         </div>
         <div class="slider">
           <div class="logos">
-            <img src="img/marcas/1.png" alt="">
-            <img src="img/marcas/2.png" alt="">
-            <img src="img/marcas/3.png" alt="">
-            <img src="img/marcas/4.png" alt="">
-            <img src="img/marcas/5.png" alt="">
-            <img src="img/marcas/6.png" alt="">
+            <img src="assets/img/marcas/1.png" alt="">
+            <img src="assets/img/marcas/2.png" alt="">
+            <img src="assets/img/marcas/3.png" alt="">
+            <img src="assets/img/marcas/4.png" alt="">
+            <img src="assets/img/marcas/5.png" alt="">
+            <img src="assets/img/marcas/6.png" alt="">
           </div>
         </div>
       </div>
@@ -859,7 +795,7 @@
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
             <center>
-                <img src="img/eventos/edi.jpeg" style="width: 50%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <img src="assets/img/eventos/edi.jpeg" style="width: 50%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
             </center>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -881,7 +817,7 @@
 <footer class="text-center text-lg-start" style="background-image: #212529;">
     <div class="container d-flex justify-content-center py-5">        
         <center>
-            <img src="img/logo.png" style="width: 30%;">
+            <img src="assets/img/logo.png" style="width: 30%;">
         </center>
     </div>
     <div class="container d-flex justify-content-center py-5 container-icons">        
