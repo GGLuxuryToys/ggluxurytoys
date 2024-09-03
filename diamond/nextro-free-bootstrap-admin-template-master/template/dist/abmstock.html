@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Diamond Cars - ABM Stock</title>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/fonts/font-awsome-pro/css/pro.min.css">
+    <link rel="stylesheet" href="assets/fonts/feather.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome.css">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/customizer.css">
+
+<style>
+	*::-webkit-scrollbar {
+		height: 10px;
+		width: 10px;
+	}
+	*::-webkit-scrollbar-track {
+		border-radius: 5px;
+		background-color: transparent;
+	}
+	
+	*::-webkit-scrollbar-thumb {
+		border-radius: 7px;
+		background-color: #565656;
+	}
+	
+	*::-webkit-scrollbar-thumb:hover {
+		background-color: #444444;
+	}
+	
+	*::-webkit-scrollbar-thumb:active {
+		background-color: #565656;
+	}
+
+	*{
+    	padding: 0;
+    	margin: 0;
+	}
+
+	.btn-vermas {
+		color: #fff;
+		background-color: black;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.btn-table {		
+		padding: 4px;
+		margin-right: 10px;
+		border-radius: 5px;
+		color: #fff;
+		border: none;
+	}
+
+	.btn-trash {
+		background-color: #d60b0b;
+	}
+
+	.btn-edit {
+		background-color: #ff9500;
+	}
+
+	.btn-agregar {
+		font-family: poppins, sans-serif;
+		padding: 5px;
+		margin-right: 10px;
+		border-radius: 5px;
+		color: #fff;
+		border: none;
+		background-color: #29aa27;
+		float: right;
+	}
+</style>
+</head>
+
+<body>	
+<div class="loader-bg">
+	<div class="loader-track">
+		<div class="loader-fill"></div>
+	</div>
+</div>
+<div class="pc-mob-header pc-header">
+	<div class="pcm-logo">
+		<img src="assets/images/logo.png" alt="" class="logo logo-lg">
+	</div>
+	<div class="pcm-toolbar">
+		<a href="#!" class="pc-head-link" id="mobile-collapse">
+			<div class="hamburger hamburger--arrowturn">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>	
+		</a>
+		<a href="#!" class="pc-head-link" id="header-collapse">
+			<i data-feather="more-vertical"></i>
+		</a>
+	</div>
+</div>
+	
+<nav class="pc-sidebar ">
+	<div class="navbar-wrapper">
+		<div class="m-header">
+			<a href="index.html" class="b-brand">					
+				<img src="assets/images/logo.png" style="width: 80%;">
+				<img src="assets/images/logo-sm.png" alt="" class="logo logo-sm">
+			</a>
+		</div>
+		<div class="navbar-content">
+			<ul class="pc-navbar">
+				<li class="pc-item pc-caption">
+					<label>Home</label>
+				</li>
+				<li class="pc-item">
+					<a href="index.html" class="pc-link "><span class="pc-micon"><i data-feather="home"></i></span><span class="pc-mtext">Pagina Principal</span></a>
+				</li>
+				<li class="pc-item pc-caption">
+					<label>Configuración de negocio</label>
+				</li>				
+				<li class="pc-item ">
+					<a href="#!" class="pc-link "><span class="pc-micon"><i data-feather="box"></i></span><span class="pc-mtext">Stock</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+					<ul class="pc-submenu">
+						<li class="pc-item"><a class="pc-link" href="stock.html">Stock</a></li>
+						<li class="pc-item"><a class="pc-link" href="abmstock.html">ABM Stock</a></li>						
+					</ul>
+				</li>
+				<li>
+					<a href="vendedores.html" class="pc-link "><span class="pc-micon"><i data-feather="users"></i></span><span class="pc-mtext">Vendedores</span></a>
+				</li>
+				<li class="pc-item ">
+					<a href="#!" class="pc-link "><span class="pc-micon"><i data-feather="globe"></i></span><span class="pc-mtext">Sucursales</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+					<ul class="pc-submenu">
+						<li class="pc-item"><a class="pc-link" href="sucursales.html">Sucursales</a></li>
+						<li class="pc-item"><a class="pc-link" href="abmsucursales.html">ABM Sucursales</a></li>						
+					</ul>
+				</li>
+				<li class="pc-item pc-caption">
+					<label>General</label>
+				</li>
+				<li>
+					<a href="index.html" class="pc-link "><span class="pc-micon"><i data-feather="inbox"></i></span><span class="pc-mtext">Pedidos</span></a>
+				</li>
+				<li>
+					<a href="index.html" class="pc-link "><span class="pc-micon"><i data-feather="award"></i></span><span class="pc-mtext">Sorteo 0Km</span></a>
+				</li>
+				<li>
+					<a href="index.html" class="pc-link "><span class="pc-micon"><i data-feather="user"></i></span><span class="pc-mtext">Mi cuenta</span></a>
+				</li>
+				<li>
+					<a href="index.html" class="pc-link "><span class="pc-micon"><i data-feather="settings"></i></span><span class="pc-mtext">Configuración</span></a>
+				</li>
+				<li>
+					<a href="index.html" class="pc-link "><span class="pc-micon"><i data-feather="power"></i></span><span class="pc-mtext">Cerrar sesión</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>	
+<header class="pc-header ">
+	<div class="header-wrapper">
+		<div class="ml-auto">
+			<ul class="list-unstyled">
+				<li class="dropdown pc-h-item">						
+					<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
+						<form class="px-3">
+							<div class="form-group mb-0 d-flex align-items-center">
+								<i data-feather="search"></i>
+								<input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+							</div>
+						</form>
+					</div>
+				</li>
+				<li class="dropdown pc-h-item">
+					<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+						<img src="assets/images/user/avatar-1.png" alt="user-image" class="user-avtar">
+						<span>
+							<span class="user-name">Gonzalo Fehn</span>
+							<span class="user-desc">CEO</span>
+						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
+						<a href="#!" class="dropdown-item">
+							<i data-feather="user"></i>
+							<span>Mi cuenta</span>
+						</a>
+						<a href="#!" class="dropdown-item">
+							<i data-feather="settings"></i>
+							<span>Configuración</span>
+						</a>
+						<a href="#!" class="dropdown-item">
+							<i data-feather="power"></i>
+							<span>Cerrar sesión</span>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>		
+	</div>
+</header>
+
+<!--- Modals --->
+<div class="card-body">
+	<div id="modalagregar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalagregarTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalagregarTitle"><b>Añadir Articulo</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>				
+				<div class="card-body">
+					<div class="card-body">
+						<form class="form">
+							<div class="row">									
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>ID</b></label>
+											<input type="text" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>MARCA</b></label>
+											<input type="text" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>MODELO</b></label>
+											<input type="text" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>AÑO</b></label>
+											<input type="number" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>KILOMETROS</b></label>
+											<input type="number" class="form-control">
+										</div>																					
+									</form>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn  btn-secondary" data-dismiss="modal">Salir</button>
+					<button type="button" class="btn  btn-success">Guardar</button>
+				</div>
+				</div>				
+			</div>
+		</div>
+	</div>														
+</div>
+
+<div class="card-body">
+	<div id="modaleditar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modaleditarTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modaleditarTitle"><b>Modificar Articulo</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>				
+				<div class="card-body">
+					<div class="card-body">
+						<form class="form">
+							<div class="row">									
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>ID</b></label>
+											<input type="text" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>MARCA</b></label>
+											<input type="text" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>MODELO</b></label>
+											<input type="text" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>AÑO</b></label>
+											<input type="number" class="form-control">
+										</div>																					
+									</form>
+								</div>
+								<div class="col-12">
+									<form>
+										<div class="form-group">
+											<label><b>KILOMETROS</b></label>
+											<input type="number" class="form-control">
+										</div>																					
+									</form>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn  btn-secondary" data-dismiss="modal">Salir</button>
+					<button type="button" class="btn  btn-success">Guardar</button>
+				</div>
+				</div>				
+			</div>
+		</div>
+	</div>														
+</div>
+
+
+<div class="card-body">
+	<div id="modaleliminar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modaleliminarTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modaleliminarTitle"><b>Eliminar Unidad</b></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<p>¿Estás realmente seguro de eliminar esta unidad?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn  btn-secondary" data-dismiss="modal">Salir</button>
+					<button type="button" class="btn  btn-danger">Eliminar</button>
+				</div>
+			</div>
+		</div>
+	</div>														
+</div>
+<!--- End Modals --->
+
+<div class="pc-container">
+    <div class="pcoded-content">                   
+        <div class="row">  
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header" style="border-bottom: none;">
+						<center>
+							<h3 style="color: black; font-family: poppins, sans-serif;"><b>ABM STOCK</b></h3>       
+							<h6 style="color: black; font-family: poppins, sans-serif;"><b>AGREGAR, BORRAR Y MODIFICAR STOCK.</b></h6>                        
+						</center>                        
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-12">
+								<div class="card">		
+									<div>										
+										<button type="button" class="btn-agregar" data-toggle="modal" data-target="#modalagregar"><i data-feather="plus"></i> <b>Añadir Articulo</b></button>
+									</div>							
+									<div class="card-body table-border-style">
+										<div class="table-responsive">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>#ID</th>
+														<th>MARCA</th>
+														<th>MODELO</th>
+														<th>AÑO</th>
+														<th>KM</th>
+														<th>ACCIONES</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>0001</td>
+														<td>BMW</td>
+														<td>M4</td>
+														<td>2018</td>
+														<td>88.000</td>
+														<td>																			
+															<button type="button" class="btn-table btn-edit" data-toggle="modal" data-target="#modaleditar"><i data-feather="edit-2"></i></button>
+															<button type="button" class="btn-table btn-trash" data-toggle="modal" data-target="#modaleliminar"><i data-feather="trash-2"></i></button>
+														</td>
+													</tr>
+													<tr>
+														<td>0002</td>
+														<td>AUDI</td>
+														<td>RS6</td>
+														<td>2018</td>
+														<td>55.000</td>
+														<td>																			
+															<button type="button" class="btn-table btn-edit" data-toggle="modal" data-target="#modaleditar"><i data-feather="edit-2"></i></button>
+															<button type="button" class="btn-table btn-trash" data-toggle="modal" data-target="#modaleliminar"><i data-feather="trash-2"></i></button>
+														</td>
+													</tr>													
+													<tr>
+														<td>0003</td>
+														<td>JEEP</td>
+														<td>RENEGADE</td>
+														<td>2024</td>
+														<td>0</td>
+														<td>																			
+															<button type="button" class="btn-table btn-edit" data-toggle="modal" data-target="#modaleditar"><i data-feather="edit-2"></i></button>
+															<button type="button" class="btn-table btn-trash" data-toggle="modal" data-target="#modaleliminar"><i data-feather="trash-2"></i></button>
+														</td>
+													</tr>
+												</tbody>
+											</table>																																												
+										</div>
+									</div>
+								</div>
+							</div>						
+                        </div>  										                  
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+    
+<script src="assets/js/vendor-all.min.js"></script>
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/feather.min.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+<script src="assets/js/pages/dashboard-sale.js"></script>
+
+</body>
+</html>
