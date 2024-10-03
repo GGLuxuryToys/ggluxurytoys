@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Diamond Cars - Home</title>
+<title>Diamond Cars - Vender</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -259,22 +259,24 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.btn-comprar {
+.btn-comprayventa {
     padding: 0.5%;    
-    background-color: #000;
-    border-radius: 5px;
-    color: #ffffff;
-}
-
-.btn-vender {
-    padding: 0.5%;    
-    background-color: #fff;
+    border: #000 3px solid;
     border-radius: 5px;
     color: #000;
 }
 
-.bg-banner {
-    background-image: url(assets/img/heros/herolux.jpg);
+.inputform {
+    margin-top: 10px;
+}
+
+.btnenviar {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    border-radius: 10px;
 }
 </style>
 </head>
@@ -284,177 +286,117 @@
 <!-- Navbar & Hero Start -->
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="#" class="navbar-brand p-0">
-            <img src="assets/img/logo.png" style="width: 70%;" alt="Logo">
+        <a href="index.html" class="navbar-brand p-0">
+            <img src="assets/img/logonegro.png" style="width: 70%;" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="#" class="nav-item nav-link" style="color: #a0a034 !important;"><b>Home</b></a>              
-                <a href="shop.html" class="nav-item nav-link"><b>Comprar</b></a>                
-                <a href="vender.html" class="nav-item nav-link"><b>Vender</b></a>
-                <a href="sucursales.html" class="nav-item nav-link"><b>Sucursales</b></a>
+                <a href="index.html" class="nav-item nav-link" style="color: #000 !important;"><b>Home</b></a>              
+                <a href="shop.html" class="nav-item nav-link" style="color: #000 !important;"><b>Comprar</b></a>                
+                <a href="#" style="color: #000000 !important;" class="nav-item nav-link"><b>Vender</b></a>
+                <a href="sucursales.html" class="nav-item nav-link" style="color: #000 !important;"><b>Sucursales</b></a>
             </div>
         </div>
     </nav>
   </div>
-
-    <!-- Carousel Start -->
-    <div class="carousel-header">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="assets/img/heros/herolux.jpg" class="img-fluid" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="p-3" style="max-width: 900px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
 </div>
 <!-- Navbar & Hero End -->
 
+<br><br>
 
 <section class="explore-section section-padding" id="section_2">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h3 class="mb-4">NUESTRAS UNIDADES</h3>                
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="luxury-tab" data-bs-toggle="tab" data-bs-target="#luxury-tab-pane" type="button" role="tab" aria-controls="luxury-tab-pane" aria-selected="true">0Km</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="autos-tab" data-bs-toggle="tab" data-bs-target="#autos-tab-pane" type="button" role="tab" aria-controls="autos-tab-pane" aria-selected="false">Autos</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="suv-tab" data-bs-toggle="tab" data-bs-target="#suv-tab-pane" type="button" role="tab" aria-controls="suv-tab-pane" aria-selected="false">SUV</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="mid-tab" data-bs-toggle="tab" data-bs-target="#mid-tab-pane" type="button" role="tab" aria-controls="mid-tab-pane" aria-selected="false">Mid Size</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="full-tab" data-bs-toggle="tab" data-bs-target="#full-tab-pane" type="button" role="tab" aria-controls="full-tab-pane" aria-selected="false">Full Size</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="motos" data-bs-toggle="tab" data-bs-target="#motos-tab-pane" type="button" role="tab" aria-controls="motos-tab-pane" aria-selected="false">Motos</button>
-                </li>
-                <li class="nav-item" role="presentation"></li>
-                    <button class="nav-link" id="arena" data-bs-toggle="tab" data-bs-target="#arena-tab-pane" type="button" role="tab" aria-controls="arena-tab-pane" aria-selected="false">Arena</button>
-                </li>
-                <li class="nav-item" role="presentation"></li>
-                    <button class="nav-link" id="nautica" data-bs-toggle="tab" data-bs-target="#nautica-tab-pane" type="button" role="tab" aria-controls="nautica-tab-pane" aria-selected="false">Nautica</button>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="luxury-tab-pane" role="tabpanel" aria-labelledby="luxury-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="assets/img/0km/cronos.png" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>FIAT</b></h5>
-                                          <h5 class="model"><b>CRONOS</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="unidades/luxurytoys/california.html" class="float">VER UNIDAD</a>
-                                    </div>
-                                </center> 
-                            </div>                            
-                            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="assets/img/0km/pulse.png" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>FIAT</b></h5>
-                                          <h5 class="model"><b>PULSE</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="unidades/luxurytoys/california.html" class="float">VER UNIDAD</a>
-                                    </div>
-                                </center> 
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="assets/img/0km/fastback.png" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>FIAT</b></h5>
-                                          <h5 class="model"><b>FASTBACK</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="unidades/luxurytoys/california.html" class="float">VER UNIDAD</a>
-                                    </div>
-                                </center> 
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-                                <center>
-                                    <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="assets/img/0km/208.png" alt="Card image cap">
-                                        <div class="card-body">
-                                          <h5 class="brand" style="color: #444a57;"><b>PEUGEOT</b></h5>
-                                          <h5 class="model"><b>208</b></h5>
-                                        </div>
-                                        <a class="btn btn-asesor" href="unidades/luxurytoys/california.html" class="float">VER UNIDAD</a>
-                                    </div>
-                                </center> 
-                            </div>                            
-                        </div>
-                        <br><br>
-                        <div class="col-12">
-                            <a class="btn btn-asesor" href="shop.html" class="float">VER TODO</a>
-                        </div>
-                    </div>                                   
-                </div>  
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="explore-section section-padding bg-banner" id="section_2">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <center>
-                    <img src="assets/img/logo.png" style="width: 25%;">               
-                </center>                
+                <h3 class="mb-4">¡VENDÉ TU VEHÍCULO CON NOSOTROS!</h3>                
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <center>
                     <br>
-                    <p style="color: #ffffff;">Brindamos la mayor seguridad y asesoramiento a la hora de comprar un vehiculo usado, generando transparencia y seriedad durante el proceso de compra o venta.</p>
+                    <p style="color: #414141;">Una nueva forma de vender tu vehiculo, ya seas particular o agencia.</p>
                 </center>                
             </div>
         </div>  
         <div class="row">
-            <div class="col-12">
-                <center>
-                    <br>
-                    <button class="btn btn-comprar">COMPRAR</b></a></button>
-                    <button class="btn btn-vender"><a style="color: #000;" href="comprar.html"><b>VENDER</b></a></button>
-                </center>                
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <br>
+                <p style="color: #414141;"><i class="fa-solid fa-check"></i> Respeteamos el valor que le das a tu vehiculo.</p><br>
+                <p style="color: #414141;"><i class="fa-solid fa-check"></i> Gestionamos la venta de principio a fin, sabemos lo valioso que es tu tiempo.</p><br>
+                <p style="color: #414141;"><i class="fa-solid fa-check"></i> Contamos con un amplio salon de ventas, para exhibir tu unidad al publico.</p><br>
+                <p style="color: #414141;"><i class="fa-solid fa-check"></i> Contamos con un grupo de más de 50 vendedores, los cuales ayudarán a que tu venta sea más rapida.</p><br>
             </div>
-        </div>        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="form-venta cardventa">
+                    <form><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="text" class="form-control inputform" placeholder="Nombre">                          
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="text" class="form-control inputform" placeholder="Apellido">                          
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="number" class="form-control inputform" placeholder="WhatsApp">                          
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="email" class="form-control inputform" placeholder="Email">                          
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="text" class="form-control inputform" placeholder="Marca">                          
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="text" class="form-control inputform" placeholder="Modelo">                          
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="number" class="form-control inputform" placeholder="Año">                          
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">                          
+                                    <input type="text" class="form-control inputform" placeholder="Kilometraje">                          
+                                </div>
+                            </div>
+                        </div>      
+                        <div class="row">
+                            <div class="col-12">
+                                <br>
+                                <button class="btnenviar"><b>ENVIAR</b></button><br>
+                                <center>
+                                    <small style="color: #414141;">Una vez enviada la solicitud, un asesor se estará comunicando con usted para la venta de su vehiculo.</small>
+                                </center>                                
+                            </div>
+                        </div>                                          
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
+                 
 <br><br>
 
 <div class="container">
